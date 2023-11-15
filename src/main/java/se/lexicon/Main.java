@@ -9,10 +9,10 @@ public class Main {
         System.out.println(" ");
         System.out.println("Choose from 1-4 and hit the Enter key");
         System.out.println(" ");
-        System.out.println("Type 1 to ADD the numbers");
-        System.out.println("Type 2 to SUBTRACT the numbers");
-        System.out.println("Type 3 to MULTIPLY the numbers");
-        System.out.println("Type 4 to DIVIDE the numbers");
+        System.out.println("Type 1 to ADD");
+        System.out.println("Type 2 to SUBTRACT");
+        System.out.println("Type 3 to MULTIPLY");
+        System.out.println("Type 4 to DIVIDE");
         int choice = numbers.nextInt();
 
         double sumOfNumbers = addition(number1,number2);

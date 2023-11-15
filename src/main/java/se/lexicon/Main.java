@@ -6,7 +6,6 @@ public class Main {
         System.out.println("Enter two numbers calculate, followed by Enter key!");
         double number1 = numbers.nextDouble();
         double number2 = numbers.nextDouble();
-
         System.out.println(" ");
         System.out.println("Choose from 1-4 and hit the Enter key");
         System.out.println(" ");
@@ -14,18 +13,12 @@ public class Main {
         System.out.println("Type 2 to SUBTRACT the numbers");
         System.out.println("Type 3 to MULTIPLY the numbers");
         System.out.println("Type 4 to DIVIDE the numbers");
-
         int choice = numbers.nextInt();
 
         double sumOfNumbers = addition(number1,number2);
         double multipliedNumbers = multiply(number1, number2);
         double subtractedNumbers = subtraction(number1, number2);
         double dividedNumbers = division(number1, number2);
-
-
-        //double division = number2 / number1;
-        //double subtraction = number1 - number2;
-        //double multiplication = number1 * number2;
 
 
         if (choice==1) {
@@ -39,13 +32,6 @@ public class Main {
         } else{
             System.out.println("You need to choose 1 through 4");
         }
-
-
-
-
-
-
-
 
     }
     static double addition(double num1, double num2){

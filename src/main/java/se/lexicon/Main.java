@@ -8,21 +8,43 @@ public class Main {
         double number2 = numbers.nextDouble();
 
 
+        System.out.println("Type 1 to Add the Numbers");
+        System.out.println("Type 2 to Subtract the Numbers");
+        System.out.println("Type 3 to Multiply the Numbers");
+        System.out.println("Type 4 to Divide the Numbers");
+
+        int choice = numbers.nextInt();
 
         double sumOfNumbers = addition(number1,number2);
         double multipliedNumbers = multiply(number1, number2);
         double subtractedNumbers = subtraction(number1, number2);
-        double dividedNumbers = division(number1, number2)
+        double dividedNumbers = division(number1, number2);
 
 
         //double division = number2 / number1;
         //double subtraction = number1 - number2;
         //double multiplication = number1 * number2;
 
-        System.out.println("The sum of numbers " + number1 + " and " + number2 + " = " +sumOfNumbers);
-        System.out.println(number1 + " times " + number2 + " is " +multipliedNumbers);
-        System.out.println(number1 + " divided by " + number2 + " = " +dividedNumbers);
-        System.out.println(number1 + " minus " + number2 + " is " +subtractedNumbers);
+
+        if (choice==1) {
+            System.out.println("The sum of numbers " + number1 + " and " + number2 + " = " + sumOfNumbers);
+        } else if (choice == 2) {
+            System.out.println(number1 + " minus " + number2 + " is " + subtractedNumbers);
+        } else if (choice == 3) {
+            System.out.println(number1 + " times " + number2 + " is " + multipliedNumbers);
+        } else if (choice == 4){
+            System.out.println(number1 + " divided by " + number2 + " = " +dividedNumbers);
+        } else{
+            System.out.println("You need to choose 1 through 4");
+        }
+
+
+
+
+
+
+
+
     }
     static double addition(double num1, double num2){
         double result = num1 + num2;

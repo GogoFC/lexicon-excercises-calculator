@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-boolean exit2 = true;
 
-        while (exit2) {
+        while (true) {
 
             Scanner numbers = new Scanner(System.in);
             System.out.println("Enter two numbers calculate, followed by Enter key!");

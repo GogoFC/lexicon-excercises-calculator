@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner numbers = new Scanner(System.in);
-        System.out.println("Enter two numbers to be calculated!");
+        System.out.println("Enter two numbers calculate, followed by Enter key!");
         double number1 = numbers.nextDouble();
         double number2 = numbers.nextDouble();
 
-
-        System.out.println("Type 1 to Add the Numbers");
-        System.out.println("Type 2 to Subtract the Numbers");
-        System.out.println("Type 3 to Multiply the Numbers");
-        System.out.println("Type 4 to Divide the Numbers");
+        System.out.println("Choose from 1-4 and hit the Enter key");
+        System.out.println(" ");
+        System.out.println("Type 1 to ADD the numbers");
+        System.out.println("Type 2 to SUBTRACT the numbers");
+        System.out.println("Type 3 to MULTIPLY the numbers");
+        System.out.println("Type 4 to DIVIDE the numbers");
 
         int choice = numbers.nextInt();
 

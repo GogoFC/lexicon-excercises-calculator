@@ -40,7 +40,7 @@ public class Main {
 
             System.out.println(" ");
             System.out.println(" Would you like to Exit the program?");
-            System.out.println(" Type 8 to exit ");
+            System.out.println(" Type 8 to exit or type another nubmer to continue");
             int exit2 = numbers.nextInt();
             exit = exit2;
 

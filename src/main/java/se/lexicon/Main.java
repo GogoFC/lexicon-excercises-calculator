@@ -7,6 +7,7 @@ public class Main {
         double number1 = numbers.nextDouble();
         double number2 = numbers.nextDouble();
 
+        System.out.println(" ");
         System.out.println("Choose from 1-4 and hit the Enter key");
         System.out.println(" ");
         System.out.println("Type 1 to ADD the numbers");

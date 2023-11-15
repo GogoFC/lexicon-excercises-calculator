@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        int exit = 0;
 
-        while (true) {
+        while (exit != 8) {
 
             Scanner numbers = new Scanner(System.in);
             System.out.println("Enter two numbers calculate, followed by Enter key!");
@@ -40,10 +41,9 @@ public class Main {
             System.out.println(" ");
             System.out.println(" Would you like to Exit the program?");
             System.out.println(" Type 8 to exit ");
-            int exit = numbers.nextInt();
-            if (exit == 8){
-                break;
-            }
+            int exit2 = numbers.nextInt();
+            exit = exit2;
+
         }
 
     }

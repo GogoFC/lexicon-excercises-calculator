@@ -37,7 +37,7 @@ public class Main {
                 System.out.println("You need to choose 1 through 4");
             }
 
-            System.out.println(" Type 8 to exit or continue looping forever");
+            System.out.println(" Type 8 to exit or type any number to re-run the program");
             int exit = numbers.nextInt();
             if (exit == 8){
                 break;

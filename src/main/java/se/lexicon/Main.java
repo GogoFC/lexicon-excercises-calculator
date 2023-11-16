@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int exit = 0;
+        double exit = 0;
         Scanner numbers = new Scanner(System.in);
 
         while (exit != 8) {
@@ -26,6 +26,8 @@ public class Main {
             double number2 = numbers.nextDouble();
 
 
+int option = 0;
+
             System.out.println(" ");
             System.out.println("Choose an option and hit the Enter key");
             System.out.println(" ");
@@ -34,13 +36,21 @@ public class Main {
             System.out.println("Type 3 to MULTIPLY");
             System.out.println("Type 4 to DIVIDE");
 
-            int choice = numbers.nextInt();
 
-/*            while (!numbers.hasNextDouble()) {
+            /* Implement this
+            while (option <= 1 && option >= 4) {
                 System.out.println("Not a valid choice, choose from 1 to 4");
                 numbers.next();
+                option = numbers.nextInt();
             }
-*/
+            */
+
+            while (!numbers.hasNextDouble()) {
+                System.out.println("Not a number, re-enter");
+                numbers.next();
+            }
+
+            int choice = numbers.nextInt();
 
             if (choice == 1) {
                 double sumOfNumbers = addition(number1, number2);
@@ -55,13 +65,26 @@ public class Main {
                 double dividedNumbers = division(number1, number2);
                 System.out.println(number1 + " divided by " + number2 + " = " + dividedNumbers);
             } else {
-                System.out.println("You need to choose 1 through 4");
+                System.out.println("Not a valid choice. Choose 1 through 4");
+
             }
+
+            System.out.flush();
 
             System.out.println(" ");
             System.out.println(" Would you like to Exit the program?");
-            System.out.println(" Type 8 to exit or type another nubmer to continue");
-            int exit2 = numbers.nextInt();
+            System.out.println(" ");
+            System.out.println(" Type 8 to exit");
+            System.out.println(" ");
+            System.out.println(" Type any number to continue");
+
+            while (!numbers.hasNextDouble()) {
+                System.out.println("Not a number, re-enter");
+                numbers.next();
+            }
+
+
+            double exit2 = numbers.nextDouble();
             exit = exit2;
 
         }

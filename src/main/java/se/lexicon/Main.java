@@ -15,24 +15,32 @@ public class Main {
 
             while (!numbers.hasNextDouble()) {
                 System.out.println("Not a number, re-enter:");
-                numbers.next();
+                numbers.next(); // ask about this. numbers.nextDouble
             }
-
-
             double number1 = numbers.nextDouble();
 
+            while (!numbers.hasNextDouble()) {
+                System.out.println("Not a number, re-enter:");
+                numbers.next();
+            }
             double number2 = numbers.nextDouble();
+
+
             System.out.println(" ");
-            System.out.println("Choose from 1-4 and hit the Enter key");
+            System.out.println("Choose an option and hit the Enter key");
             System.out.println(" ");
             System.out.println("Type 1 to ADD");
             System.out.println("Type 2 to SUBTRACT");
             System.out.println("Type 3 to MULTIPLY");
             System.out.println("Type 4 to DIVIDE");
+
             int choice = numbers.nextInt();
 
-
-
+/*            while (!numbers.hasNextDouble()) {
+                System.out.println("Not a valid choice, choose from 1 to 4");
+                numbers.next();
+            }
+*/
 
             if (choice == 1) {
                 double sumOfNumbers = addition(number1, number2);

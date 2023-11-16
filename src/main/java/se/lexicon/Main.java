@@ -4,12 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         int exit = 0;
+        Scanner numbers = new Scanner(System.in);
 
         while (exit != 8) {
 
-            Scanner numbers = new Scanner(System.in);
+
             System.out.println("Enter two numbers calculate, followed by Enter key!");
+
+
+
+            while (!numbers.hasNextDouble()) {
+                System.out.println("Not a number, re-enter:");
+                numbers.next();
+            }
+
+
             double number1 = numbers.nextDouble();
+
             double number2 = numbers.nextDouble();
             System.out.println(" ");
             System.out.println("Choose from 1-4 and hit the Enter key");

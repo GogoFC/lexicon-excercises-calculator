@@ -20,19 +20,20 @@ public class Main {
             System.out.println("Type 4 to DIVIDE");
             int choice = numbers.nextInt();
 
-            double sumOfNumbers = addition(number1, number2);
-            double multipliedNumbers = multiply(number1, number2);
-            double subtractedNumbers = subtraction(number1, number2);
-            double dividedNumbers = division(number1, number2);
+
 
 
             if (choice == 1) {
+                double sumOfNumbers = addition(number1, number2);
                 System.out.println("The sum of numbers " + number1 + " and " + number2 + " = " + sumOfNumbers);
             } else if (choice == 2) {
+                double subtractedNumbers = subtraction(number1, number2);
                 System.out.println(number1 + " minus " + number2 + " is " + subtractedNumbers);
             } else if (choice == 3) {
+                double multipliedNumbers = multiply(number1, number2);
                 System.out.println(number1 + " times " + number2 + " is " + multipliedNumbers);
             } else if (choice == 4) {
+                double dividedNumbers = division(number1, number2);
                 System.out.println(number1 + " divided by " + number2 + " = " + dividedNumbers);
             } else {
                 System.out.println("You need to choose 1 through 4");

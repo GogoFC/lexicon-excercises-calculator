@@ -9,8 +9,8 @@ public class Main {
         while (exit != 8) {
 
 
-            System.out.println("Enter two numbers calculate, followed by Enter key!");
-
+            System.out.println("Enter two numbers calculate, followed by Enter key!" + "\n");
+            System.out.print("Enter first  number >_ ");
 
 
             while (!numbers.hasNextDouble()) {
@@ -19,6 +19,7 @@ public class Main {
             }
             double number1 = numbers.nextDouble();
 
+            System.out.print("Enter second number >_ ");
             while (!numbers.hasNextDouble()) {
                 System.out.println("Not a number, re-enter:");
                 numbers.next();
@@ -33,7 +34,7 @@ public class Main {
             System.out.println("Type 2 to SUBTRACT");
             System.out.println("Type 3 to MULTIPLY");
             System.out.println("Type 4 to DIVIDE");
-
+            System.out.print(">_ ");
             //int option = 0;
             /* Implement this
             while (option <= 1 && option >= 4) {
@@ -73,6 +74,7 @@ public class Main {
             System.out.println("\n" + "Would you like to Exit the program?");
             System.out.println("\n" + "Type 8 to exit");
             System.out.println("\n" + "Type any number to continue");
+            System.out.print(">_ ");
 
             while (!numbers.hasNextDouble()) {
                 System.out.println("Not a number, re-enter");

@@ -83,7 +83,7 @@ public class Main {
             }
             */
 
-            String exit2 = numbers.next();
+            String exit2 = numbers.next().toLowerCase();
             exit = exit2;
 
         }

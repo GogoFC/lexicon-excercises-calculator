@@ -76,12 +76,12 @@ public class Main {
             System.out.println("\n" + "To continue type anything");
             System.out.print(">_ ");
 
-            /*
+            /* unnecessary loop inside loop
             while (!numbers.equals("bye")) {
                 System.out.println("Not a number, re-enter");
                 numbers.next();
             }
-*/
+            */
 
             String exit2 = numbers.next();
             exit = exit2;

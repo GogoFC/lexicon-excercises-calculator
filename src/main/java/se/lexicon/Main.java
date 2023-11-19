@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double exit = 0;
+        String exit = "";
         Scanner numbers = new Scanner(System.in);
 
-        while (exit != 8) {
+        while (!exit.equals("bye")) {
 
 
             System.out.println("Enter two numbers calculate, followed by Enter key!" + "\n");
@@ -72,17 +72,18 @@ public class Main {
 
 
             System.out.println("\n" + "Would you like to Exit the program?");
-            System.out.println("\n" + "Type 8 to exit");
-            System.out.println("\n" + "Type any number to continue");
+            System.out.println("\n" + "Type 'bye' to exit");
+            System.out.println("\n" + "To continue type anything");
             System.out.print(">_ ");
 
-            while (!numbers.hasNextDouble()) {
+            /*
+            while (!numbers.equals("bye")) {
                 System.out.println("Not a number, re-enter");
                 numbers.next();
             }
+*/
 
-
-            double exit2 = numbers.nextDouble();
+            String exit2 = numbers.next();
             exit = exit2;
 
         }

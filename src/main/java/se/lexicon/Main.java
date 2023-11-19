@@ -9,7 +9,7 @@ public class Main {
         while (!exit.equals("bye")) {
 
 
-            System.out.println("Enter two numbers calculate, followed by Enter key!" + "\n");
+            System.out.println("\n" + "Enter two numbers calculate, followed by Enter key!" + "\n");
             System.out.print("Enter first  number >_ ");
 
 
@@ -83,8 +83,7 @@ public class Main {
             }
             */
 
-            String exit2 = numbers.next().toLowerCase();
-            exit = exit2;
+            exit = numbers.next().toLowerCase();
 
         }
 
